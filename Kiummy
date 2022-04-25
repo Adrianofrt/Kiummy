@@ -10,11 +10,7 @@ int main ()
    
         printf("——Jogo da Velha——\n");
    
-      
-   
-   
-   
-char simbolo;
+    char simbolo;
     int posicao;
    
     printf("Jogador 1 escolha o símbolo (O ou X)");
@@ -25,9 +21,9 @@ char simbolo;
    
     int linhas, colunas;
    
-  int a  [ Linhas]  [ Colunas] = {{1, 1, 1 },
-                                                      { 1, 1, 1 },
-                                                      { 1, 1, 1 }};
+    int a  [ Linhas]  [ Colunas] = {{1, 1, 1 },
+                                   { 1, 1, 1 },
+                                   { 1, 1, 1 }};
    
     for (linhas = 0; linhas  <  Linhas; linhas ++) {
        for (colunas = 0; colunas <  Colunas; colunas++) {
@@ -92,7 +88,6 @@ char simbolo;
               a [3] [3] = 'X';
         break;
         }
-   
    
     printf("Jogador 2 escolha o símbolo (O ou X)");
     scanf("%c", &simbolo);
