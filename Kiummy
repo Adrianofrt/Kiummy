@@ -1,0 +1,172 @@
+#include <stdio.h>
+
+#define Linhas 3
+#define Colunas 3
+
+int main ()
+{
+   
+    Refaz:
+   
+        printf("——Jogo da Velha——\n");
+   
+      
+   
+   
+   
+char simbolo;
+    int posicao;
+   
+    printf("Jogador 1 escolha o símbolo (O ou X)");
+    scanf("%c", &simbolo);
+   
+    printf("Jogador 1 escolha a posição (ex. 12, Primeira linha, segunda coluna)");
+    scanf("%d", &posicao);
+   
+    int linhas, colunas;
+   
+  int a  [ Linhas]  [ Colunas] = {{1, 1, 1 },
+                                                      { 1, 1, 1 },
+                                                      { 1, 1, 1 }};
+   
+    for (linhas = 0; linhas  <  Linhas; linhas ++) {
+       for (colunas = 0; colunas <  Colunas; colunas++) {
+           printf("%d", a [ linhas ]  [ colunas] );
+             }
+        printf("\n");
+    }
+  
+     switch  (posicao){
+        case  11:
+           if (simbolo == 'O')
+              a [1] [1] = 'O';
+           else
+              a [1] [1] = 'X';
+        break;
+        case  12:
+           if (simbolo == 'O')
+              a [1] [2] = 'O';
+           else
+              a [1] [2] = 'X';
+        break;
+        case 13:
+            if (simbolo == 'O')
+              a [1] [3] = 'O';
+           else
+              a [1] [3] = 'X';
+        break;
+        case 21:
+            if (simbolo == 'O')
+              a [2] [1] = 'O';
+           else
+              a [2] [1] = 'X';
+        break;
+        case 22:
+            if (simbolo == 'O')
+              a [2] [2] = 'O';
+            else
+              a [2] [2] = 'X';
+        break;
+        case 23:
+            if (simbolo == 'O')
+              a [2] [3] = 'O';
+            else
+              a [2] [3] = 'X';
+        break;
+        case 31:
+            if (simbolo == 'O')
+              a [3] [1] = 'O';
+            else
+              a [3] [1] = 'X';
+        break;
+        case 32:
+            if (simbolo == 'O')
+              a [3] [2] = 'O';
+            else
+              a [3] [2] = 'X';
+        break;
+        case 33:
+            if (simbolo == 'O')
+              a [3] [3] = 'O';
+            else
+              a [3] [3] = 'X';
+        break;
+        }
+   
+   
+    printf("Jogador 2 escolha o símbolo (O ou X)");
+    scanf("%c", &simbolo);
+   
+    printf("jogador 2 escolha a posição (ex. 23 segunda linha, terceira coluna)");
+    scanf("%d", &posicao);
+      
+    for (linhas = 0; linhas  <  Linhas; linhas ++) {
+       for (colunas = 0; colunas <  Colunas; colunas++){
+           printf("%d", a [ linhas ]  [ colunas] );
+        }
+        printf("\n");
+    }
+   
+    switch  (posicao){
+        case  11:
+           if (simbolo == 'O')
+              a [1] [1] = 'O';
+           else
+              a [1] [1] = 'X';
+        break;
+        case  12:
+           if (simbolo == 'O')
+              a [1] [2] = 'O';
+           else
+              a [1] [2] = 'X';
+        break;
+        case 13:
+            if (simbolo == 'O')
+              a [1] [3] = 'O';
+           else
+              a [1] [3] = 'X';
+        break;
+        case 21:
+            if (simbolo == 'O')
+              a [2] [1] = 'O';
+           else
+              a [2] [1] = 'X';
+        break;
+        case 22:
+            if (simbolo == 'O')
+              a [2] [2] = 'O';
+            else
+              a [2] [2] = 'X';
+        break;
+        case 23:
+            if (simbolo == 'O')
+              a [2] [3] = 'O';
+            else
+              a [2] [3] = 'X';
+        break;
+        case 31:
+            if (simbolo == 'O')
+              a [3] [1] = 'O';
+            else
+              a [3] [1] = 'X';
+        break;
+        case 32:
+            if (simbolo == 'O')
+              a [3] [2] = 'O';
+            else
+              a [3] [2] = 'X';
+        break;
+        case 33:
+            if (simbolo == 'O')
+              a [3] [3] = 'O';
+            else
+              a [3] [3] = 'X';
+        break;
+        }
+   
+    goto Refaz;
+   
+    return (0);
+   
+}
+
